@@ -228,6 +228,14 @@ ul {
 
   background-color: var(--accent-text-color);
   color: var(--another-text-color);
+
+  transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
+}
+
+.m-section-service:hover,
+.m-section-service:focus {
+  background-color: var(--primery-bgc);
+  color: var(--accent-text-color);
 }
 
 /* Модальное окно */
@@ -298,7 +306,7 @@ ul {
   fill: var(--accent-bgc);
 }
 
-.Feedback b {
+.modal b {
   display: block;
   margin-bottom: 12px;
 
@@ -829,7 +837,7 @@ ul {
   justify-content: flex-start;
 }
 .social,
-.form-email {
+.subscription {
   font-weight: 700;
   line-height: 1.14em;
   letter-spacing: 0.03em;
@@ -874,19 +882,18 @@ ul {
   background-color: var(--accent-text-color);
 }
 
-.form-email {
-  width: 570px;
-}
-
-.form-email p {
+.subscription p {
   margin: 0;
   margin-bottom: 20px;
 }
 
-.flex-form-email {
+.form-email {
   display: flex;
   justify-content: space-between;
+
+  min-width: 570px;
 }
+
 .input-email {
   width: 100%;
   margin-right: 10px;
@@ -927,11 +934,28 @@ ul {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
+}
+
+.subscribe:hover,
+.subscribe:focus{
+  background-color: var(--primery-bgc);
+  color: var(--accent-text-color);
+}
+
+.subscribe:hover .send-icon,
+.subscribe:focus .send-icon {
+  fill: var(--accent-bgc);
 }
 
 .send-icon {
   width: 24px;
   height: 24px;
+
+  fill: var(--primery-bgc);
+
+  transition: fill 250ms var(--time-distribution-function);
 }
 
 .subscribe-text {
