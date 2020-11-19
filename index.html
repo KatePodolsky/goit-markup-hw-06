@@ -326,7 +326,46 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close" data-modal-close>
+        <svg class="icon-close">
+          <use href="./images/sprite.svg#icon-close">
+          </use>
+        </svg>
       </button>
+      <form class="Feedback">
+        <b>Оставьте свои данные, мы вам перезвоним</b>
+        <label class="form-field">
+          <span class="form-label">Имя</span>
+          <svg class="icon-form">
+            <use href="./images/sprite.svg#icon-person-black">
+            </use>
+          </svg>
+          <input class="info" type="text" name="name" autocomplete="off">
+        </label>
+        <label class="form-field"><span class="form-label">Телефон</span>
+          <svg class="icon-form">
+            <use href="./images/sprite.svg#icon-phone-black">
+            </use>
+          </svg>
+          <input class="info" type="tel" name="telefon" autocomplete="off">
+        </label>
+        <label class="form-field">
+          <span class="form-label">Почта</span>
+          <svg class="icon-form">
+            <use href="./images/sprite.svg#icon-email-black">
+            </use>
+          </svg>
+          <input class="info" type="email" name="email">
+        </label>
+        <label class="form-field" for="comment">Комментарий</label>
+        <textarea class="comment" name="comment" rows="5"  id="comment" placeholder="Введите текст"></textarea>
+        <label class="checkbox-agreement">
+            <input class="checkbox" type="checkbox" name="agreement" autocomplete="off">
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
+            <a class="agreement" href=""> Условия договора</a>
+        </label>
+        <button  class="send">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
